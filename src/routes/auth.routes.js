@@ -8,7 +8,7 @@ router.post("/register", validateBody(["name", "phone", "password"]), register);
 // POST Local:5000 /api/auth/login
 router.post("/login", validateBody(["phone", "password"]), login);
 
-// optional: สร้างแอดมินครั้งแรก
+// optional: สร้างแอดมิน
 router.post("/create-admin", validateBody(["name", "phone", "password"]), createAdmin);
 
 export default router;
